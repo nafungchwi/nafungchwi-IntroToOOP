@@ -37,6 +37,7 @@ public class Bird {
      * A constructor for the bird class: this method allows us to build a new bird with the 'new' keyword.
      * No need to change anything here, for now.
      */
+    
     public Bird(){
 
     }
@@ -45,7 +46,11 @@ public class Bird {
      *  * greater than or equal to 3.
      */
     public String sound(){
-        return "";
+        if (ageMonths < 3){
+            return "Tweet";
+        }else{
+            return "Chirp";
+        }
     }
 
 }
